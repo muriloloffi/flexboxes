@@ -23,7 +23,29 @@ Quando o eixo principal está definido em linha, o eixo cruzado é o eixo vertic
 
 ```flex-wrap: wrap;``` Permite que um container do tipo flexbox quebre em múltiplas linhas. Neste caso, cada linha se comporta como um contâiner distinto e a distribuição de espaço irá acontecer ao longo daquela linha.
 
+Pode receber os valores:
+
+- **nowrap**
+- **wrap**
+- **wrap-reverse**
+- **initial**
+- **inherit**
+
 ### Flex-flow
 
 Permite combinar as propriedades `flex-direction` e `flex-wrap` em uma única. Exemplo de uso: ```flex-flow: row-reverse wrap;```
+
+### Justify-content
+
+Alinhas os conteúdos no eixo principal.
+
+### Align-items
+
+Alinha os conteúdos em relação ao eixo cruzado. Valores possíveis:
+
+- **flex-start**
+- **flex-end**
+- **center**
+- **stretch**
+- **baseline**
 
