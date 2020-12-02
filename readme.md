@@ -6,7 +6,7 @@ Propriedade que veio com CSS3 para trabalhar com layouts responsivos na web com 
 
 Para trabalhar com flexboxes, aplicar ```display: flex;``` a partir das configurações CSS no elemento em si ou no elemento pai dos elementos desejados.
 
-### Flex-direction
+### Flex-direction: eixo de orientação do conteúdo
 
 Determina o eixo principal a ser trabalhado, recebe quatro valores:
 
@@ -18,22 +18,6 @@ Determina o eixo principal a ser trabalhado, recebe quatro valores:
 #### Eixo cruzado
 
 Quando o eixo principal está definido em linha, o eixo cruzado é o eixo vertical e vice-versa. É importante atentar-se a este datalhe na hora de justificar e alinhar os itens "Flex", pois as propriedades de alinhamento trabalham com eixos específicos.
-
-### Flex-wrap
-
-```flex-wrap: wrap;``` Permite que um container do tipo flexbox quebre em múltiplas linhas. Neste caso, cada linha se comporta como um contâiner distinto e a distribuição de espaço irá acontecer ao longo daquela linha.
-
-Pode receber os valores:
-
-- **nowrap**
-- **wrap**
-- **wrap-reverse**
-- **initial**
-- **inherit**
-
-### Flex-flow
-
-Permite combinar as propriedades `flex-direction` e `flex-wrap` em uma única. Exemplo de uso: ```flex-flow: row-reverse wrap;```
 
 ### Alinhamento
 
@@ -63,6 +47,26 @@ Alinha os conteúdos no eixo cruzado, ou seja, vertical para direção em linha 
 - **space-evenly**
 
 Desta forma, se um item está definido como linha/"row", a propriedade `align-items` irá modificar o eixo vertical, enquanto um item definido em coluna/"column" é modificado no eixo horizontal pela mesma propriedade.
+
+### Flex-wrap: quebra de conteúdo por limitação de espaço
+
+Pode-se forçar os itens flex a ficarem no mesmo eixo ou permitir que aconteça quebra. Com ```flex-wrap: wrap;```, permite-se que um container do tipo flexbox quebre em múltiplos contêineres, novas linhas ou novas colunas. Neste caso, cada quebra se comporta como um contâiner distinto e a distribuição de espaço irá acontecer ao longo das linhas ou colunas avulsas.
+
+Pode receber os valores:
+
+- **nowrap** - para forçar que não haja quebra
+- **wrap**
+- **wrap-reverse**
+- **initial**
+- **inherit**
+
+#### Flex-flow
+
+Permite combinar as propriedades `flex-direction` e `flex-wrap` em uma única. Exemplo de uso: ```flex-flow: row-reverse wrap;```
+
+#### Align-content
+
+Com a propriedade de quebra de conteúdo em uso, habilita-se o uso da propriedade `align-content`. Com esta sintaxe, é possível definir alinhamentos específicos a partir do momento que acontece a quebrado do conteúdo. Pode receber os mesmos valores do `justify-content`.
 
 ### Flex: uso do espaço disponível
 
